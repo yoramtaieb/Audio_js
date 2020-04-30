@@ -39,23 +39,79 @@
         </div>
     </div>
 
-    <audio data-key="65" src="./sounds/eff1f5bf.au"></audio>
-    <audio data-key="66" src="./sounds/eff1f749.au"></audio>
+    <audio data-key="65" src="./sounds/la-puerta.mp3"></audio>
+    <audio data-key="66" src="./sounds/./la-puerta2.mp3"></audio>
     <audio data-key="67" src="./sounds/eff1f773.au"></audio>
     <audio data-key="68" src="./sounds/eff1fa10.au"></audio>
     <audio data-key="69" src="./sounds/eff1fea5.au"></audio>
     <audio data-key="70" src="./sounds/eff1ffab.au"></audio>
 
+    <script>
+        // document.addEventListener('keydown', (event) => {
+        //     let play = event.keyCode;
+        //     document.querySelector(`audio[data-key = "${play}"]`).play();
+        //     document.querySelector('div[data-key ="' + play + '"]').classList.add('playing');
+        //     document.addEventListener('transitionend', () => {
+        //         document.querySelector('div[data-key ="' + play + '"]').classList.remove('playing');
+        //     });
+        // });
+
+
+        let key = document.getElementsByClassName('case1');
+        console.log(key)
+        let audio = document.getElementsByTagName('audio');
+        console.log(audio[1])
+
+        window.addEventListener('keydown', keyDown);
+
+        function keyDown(e) {
+            console.log(e.keyCode)
+            if (e.keyCode == 65) {
+                audio[0].play();
+                key[0].classList.add('playing');
+            } else if (e.keyCode == 66) {
+                audio[1].play();
+                key[1].classList.add('playing');
+            }
+        }
+
+        //     } else if (e.keyCode == 68) {
+        //         audio[2].play();
+        //         key[2].classList.add('playing');
+        //     } else if (e.keyCode == 70) {
+        //         audio[3].play();
+        //         key[3].classList.add('playing');
+        //     } else if (e.keyCode == 71) {
+        //         audio[4].play();
+        //         key[4].classList.add('playing');
+        //     } else if (e.keyCode == 72) {
+        //         audio[5].play();
+        //         key[5].classList.add('playing');
+        //     } else if (e.keyCode == 74) {
+        //         audio[6].play();
+        //         key[6].classList.add('playing');
+        //     } else if (e.keyCode == 75) {
+        //         audio[7].play();
+        //         key[7].classList.add('playing');
+        //     } else if (e.keyCode == 76) {
+        //         audio[8].play();
+        //         key[8].classList.add('playing');
+        //     }
+        //     document.addEventListener('keyup', () => {
+        //         key[0].classList.remove('playing');
+        //         key[1].classList.remove('playing');
+        //         key[2].classList.remove('playing');
+        //         key[3].classList.remove('playing');
+        //         key[4].classList.remove('playing');
+        //         key[5].classList.remove('playing');
+        //         key[6].classList.remove('playing');
+        //         key[7].classList.remove('playing');
+        //         key[8].classList.remove('playing');
+        //     })
+        //
+    </script>
+
 </body>
-
-
-
-
-
-
-
-<script>
-</script>
 
 
 
