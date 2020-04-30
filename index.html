@@ -11,24 +11,24 @@
 <body>
 
     <div id="carre">
-        <div data-key="65" class="case1">
+        <div data-key="65" class="case1 all">
             <span class="para1">A</span>
         </div>
-        <div data-key="66" class="case2">
+        <div data-key="66" class="case2 all">
             <span class="para2">B</span>
         </div>
-        <div data-key="67" class="case3">
+        <div data-key="67" class="case3 all">
             <span class="para3">C</span>
         </div>
-        <div data-key="68" class="case4">
+        <div data-key="68" class="case4 all">
             <span class="para4">D</span>
         </div>
     </div>
     <div id="carre2">
-        <div data-key="69" class="case5">
+        <div data-key="69" class="case5 all">
             <span class="para5">E</span>
         </div>
-        <div data-key="70" class="case6">
+        <div data-key="70" class="case6 all">
             <span class="para6">F</span>
         </div>
         <div class="case7">
@@ -57,7 +57,7 @@
         // });
 
 
-        let key = document.getElementsByClassName('case1');
+        let key = document.getElementsByClassName('all');
         console.log(key)
         let audio = document.getElementsByTagName('audio');
         console.log(audio[1])
@@ -68,10 +68,11 @@
             console.log(e.keyCode)
             if (e.keyCode == 65) {
                 audio[0].play();
-                key[0].classList.add('playing');
+                key[0].classList.add('newClass');
+
             } else if (e.keyCode == 66) {
                 audio[1].play();
-                key[1].classList.add('playing');
+                key[1].classList.add('newClass2')
             }
         }
 
@@ -97,18 +98,17 @@
         //         audio[8].play();
         //         key[8].classList.add('playing');
         //     }
-        //     document.addEventListener('keyup', () => {
-        //         key[0].classList.remove('playing');
-        //         key[1].classList.remove('playing');
-        //         key[2].classList.remove('playing');
-        //         key[3].classList.remove('playing');
-        //         key[4].classList.remove('playing');
-        //         key[5].classList.remove('playing');
-        //         key[6].classList.remove('playing');
-        //         key[7].classList.remove('playing');
-        //         key[8].classList.remove('playing');
-        //     })
-        //
+        document.addEventListener('keyup', () => {
+            key[0].classList.remove('newClass');
+            key[1].classList.remove('newClass2');
+            // key[2].classList.remove('playing');
+            // key[3].classList.remove('playing');
+            // key[4].classList.remove('playing');
+            // key[5].classList.remove('playing');
+            // key[6].classList.remove('playing');
+            // key[7].classList.remove('playing');
+            // key[8].classList.remove('playing');
+        })
     </script>
 
 </body>

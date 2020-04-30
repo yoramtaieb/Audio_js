@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: #2E2D2D;
+    background-color: #043E3E;
 }
 
 
@@ -19,24 +19,28 @@ body {
     width: 10vw;
     height: 20vh;
     background-color: black;
+    margin-right: 1%;
 }
 
 #carre .case2 {
     width: 10vw;
     height: 20vh;
     background-color: #FAE5D3;
+    margin-right: 1%;
 }
 
 #carre .case3 {
     width: 10vw;
     height: 20vh;
     background-color: black;
+    margin-right: 1%;
 }
 
 #carre .case4 {
     width: 10vw;
     height: 20vh;
     background-color: #FAE5D3;
+    margin-right: 1%;
 }
 
 .para1 {
@@ -44,7 +48,7 @@ body {
     font-size: 100px;
     display: flex;
     justify-content: center;
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 .para2 {
@@ -80,30 +84,35 @@ body {
 #carre2 {
     display: flex;
     justify-content: center;
+    padding-top: 1%;
 }
 
 #carre2 .case5 {
     width: 10vw;
     height: 20vh;
     background-color: #FAE5D3;
+    margin-right: 1%;
 }
 
 #carre2 .case6 {
     width: 10vw;
     height: 20vh;
     background-color: black;
+    margin-right: 1%;
 }
 
 #carre2 .case7 {
     width: 10vw;
     height: 20vh;
     background-color: #FAE5D3;
+    margin-right: 1%;
 }
 
 #carre2 .case8 {
     width: 10vw;
     height: 20vh;
     background-color: black;
+    margin-right: 1%;
 }
 
 .para5 {
@@ -140,4 +149,15 @@ body {
     text-align: center;
     justify-content: center;
     font-weight: bold;
+}
+
+
+/* NOUVELLE CLASS POUR ÉVÈNEMENT JS */
+
+.newClass {
+    border: 5px solid #FAE5D3;
+}
+
+.newClass2 {
+    border: 5px solid black;
 }
