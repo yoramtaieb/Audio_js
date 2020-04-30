@@ -3,8 +3,11 @@
 }
 
 body {
-    background-color: black;
+    background-color: #2E2D2D;
 }
+
+
+/* PREMIÈRE DIV  */
 
 #carre {
     display: flex;
@@ -12,55 +15,129 @@ body {
     padding-top: 15%;
 }
 
-#carre2 {
-    display: flex;
-    justify-content: center;
-}
-
 #carre .case1 {
     width: 10vw;
     height: 20vh;
-    background-color: blue;
+    background-color: black;
 }
 
 #carre .case2 {
     width: 10vw;
     height: 20vh;
-    background-color: orange;
+    background-color: #FAE5D3;
 }
 
 #carre .case3 {
     width: 10vw;
     height: 20vh;
-    background-color: yellow;
+    background-color: black;
 }
 
 #carre .case4 {
     width: 10vw;
     height: 20vh;
-    background-color: red;
+    background-color: #FAE5D3;
+}
+
+.para1 {
+    color: #FAE5D3;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+}
+
+.para2 {
+    color: #000000;
+    font-size: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.para3 {
+    color: #FAE5D3;
+    font-size: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.para4 {
+    color: #000000;
+    font-size: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+
+/* DEUXIÈME DIV */
+
+#carre2 {
+    display: flex;
+    justify-content: center;
 }
 
 #carre2 .case5 {
     width: 10vw;
     height: 20vh;
-    background-color: lightcoral;
+    background-color: #FAE5D3;
 }
 
 #carre2 .case6 {
     width: 10vw;
     height: 20vh;
-    background-color: green;
+    background-color: black;
 }
 
 #carre2 .case7 {
     width: 10vw;
     height: 20vh;
-    background-color: greenyellow;
+    background-color: #FAE5D3;
 }
 
 #carre2 .case8 {
     width: 10vw;
     height: 20vh;
-    background-color: purple;
+    background-color: black;
+}
+
+.para5 {
+    color: black;
+    font-size: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.para6 {
+    color: #FAE5D3;
+    font-size: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.para7 {
+    color: black;
+    font-size: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.para8 {
+    color: #FAE5D3;
+    font-size: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
 }
