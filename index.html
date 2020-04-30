@@ -39,88 +39,16 @@
         </div>
     </div>
 
-    <audio data-key="65" src="./sounds/la-puerta.mp3"></audio>
-    <audio data-key="66" src="./sounds/./la-puerta2.mp3"></audio>
-    <audio data-key="67" src="./sounds/eff1f773.au"></audio>
-    <audio data-key="68" src="./sounds/eff1fa10.au"></audio>
-    <audio data-key="69" src="./sounds/eff1fea5.au"></audio>
-    <audio data-key="70" src="./sounds/eff1ffab.au"></audio>
+    <audio data-key="65" src="./sounds/SF-debile-21.mp3"></audio>
+    <audio data-key="66" src="./sounds/sf-rires-lutin-creature-01.mp3"></audio>
+    <audio data-key="67" src="./sounds/sf_banzai_01.mp3"></audio>
+    <audio data-key="68" src="./sounds/sf_banzai_02.mp3"></audio>
+    <audio data-key="69" src="./sounds/sf_banzai_03.mp3"></audio>
+    <audio data-key="70" src="./sounds/sf_banzai_04.mp3"></audio>
+    <audio data-key="71" src="./sounds/sf_banzai_05.mp3"></audio>
+    <audio data-key="72" src="./sounds/sf_banzai_06.mp3"></audio>
 
-    <script>
-        // document.addEventListener('keydown', (event) => {
-        //     let play = event.keyCode;
-        //     document.querySelector(`audio[data-key = "${play}"]`).play();
-        //     document.querySelector('div[data-key ="' + play + '"]').classList.add('playing');
-        //     document.addEventListener('transitionend', () => {
-        //         document.querySelector('div[data-key ="' + play + '"]').classList.remove('playing');
-        //     });
-        // });
-
-
-        let key = document.getElementsByClassName('all');
-        console.log(key)
-        let audio = document.getElementsByTagName('audio');
-        console.log(audio[1])
-
-        window.addEventListener('keydown', keyDown);
-
-        function keyDown(e) {
-            console.log(e.keyCode)
-            if (e.keyCode == 65) {
-                // audio[0].play();
-                key[0].classList.add('newClass');
-                key[0].style.background = "red";
-            } else if (e.keyCode == 66) {
-                // audio[1].play();
-                key[1].classList.add('newClass2')
-                key[1].style.background = "#4E5FA5"
-            } else if (e.keyCode == 67) {
-                // audio[2].play();
-                key[2].classList.add('newClass')
-                key[2].style.background = "red"
-            } else if (e.keyCode == 68) {
-                // audio[3].play();
-                key[3].classList.add('newClass2')
-                key[3].style.background = "#4E5FA5"
-            } else if (e.keyCode == 69) {
-                // audio[4].play();
-                key[4].classList.add('newClass2')
-                key[4].style.background = "red"
-            } else if (e.keyCode == 70) {
-                // audio[1].play();
-                key[5].classList.add('newClass')
-                key[5].style.background = "#4E5FA5"
-            } else if (e.keyCode == 71) {
-                // audio[1].play();
-                key[6].classList.add('newClass2')
-                key[6].style.background = "red"
-            } else if (e.keyCode == 72) {
-                // audio[1].play();
-                key[7].classList.add('newClass')
-                key[7].style.background = "#4E5FA5"
-            }
-        }
-
-        document.addEventListener('keyup', () => {
-            key[0].classList.remove('newClass');
-            key[0].style.background = "";
-            key[1].classList.remove('newClass2');
-            key[1].style.background = "";
-            key[2].classList.remove('newClass');
-            key[2].style.background = "";
-            key[3].classList.remove('newClass2');
-            key[3].style.background = "";
-            key[4].classList.remove('newClass2');
-            key[4].style.background = "";
-            key[5].classList.remove('newClass');
-            key[5].style.background = "";
-            key[6].classList.remove('newClass2');
-            key[6].style.background = "";
-            key[7].classList.remove('newClass');
-            key[7].style.background = "";
-        })
-    </script>
-
+    <script type="text/javascript" src="./app.js"></script>
 </body>
 
 
